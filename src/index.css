@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-gray-800/50 backdrop-blur-lg border border-gray-700/50;
+  }
+  
+  .select-dark {
+    @apply bg-gray-800 border-gray-700 text-gray-100 focus:border-indigo-500 focus:ring-indigo-500;
+  }
+
+  .movie-card {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(99,102,241,0.4)];
+  }
+}
